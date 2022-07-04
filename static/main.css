@@ -7,24 +7,19 @@ html {
     margin: 0px;
 }
 
-.row-title {
-    display: flex;
+.principal-container{
     width: 100%;
-    align-self: flex-start;
+    height: 100%;
 }
 
-.container-1 {
-    width: 33%;
-}
-
-.container-2 {
-    width: 33%;
+.row-title {
+    width: 100%;
     text-align: center;
+    font-size: 1.8vh;
 }
 
-.container-3 {
-    width: 33%;
-    text-align: end;
+input::placeholder{
+    font-size: 0.9rem;
 }
 
 #background-search {
@@ -33,7 +28,8 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 250px;
+    height: 30%;
+    width: 100%;
     background-image: url("../images/pattern-bg.png");
     position: relative;
     z-index: 10;
@@ -51,17 +47,20 @@ html {
 }
 
 #search {
+    background-color: transparent;
+    width: 50%;
     display: flex;
-    align-self: center;
+    justify-content: center;
+    font-size: 0.5rem;
 }
 
 .info-container {
     display: flex;
-    margin-bottom: -75px;
+    margin-top: 40px;
 }
 
 .info {
-    width: 250px;
+    width: 70%;
     height: auto;
     padding-bottom: 15px;
     background: white;
@@ -87,9 +86,14 @@ html {
     border-right: 1px solid rgba(60, 59, 64, .5);
 }
 
+#locationByIpAddress:focus{ 
+    outline: transparent !important;
+}
 
 .info-content {
     margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
     height: 65%;
     width: 85%;
     display: flex;
@@ -100,9 +104,11 @@ html {
 .info-content h4 {
     color: hsl(0, 0%, 59%);
     letter-spacing: 3px;
+    font-size: 1rem;
 }
 
 .info-content h2 {
+    font-size: 1.1rem;
     margin-top: -10px;
     color: hsl(0, 0%, 17%);
 }
@@ -154,6 +160,8 @@ button {
     .info-container {
         margin-top: 25px;
         flex-direction: column;
+        align-items: center;
+        height: 30%;
     }
 
     #info-content-central {
@@ -174,7 +182,10 @@ button {
         border-top-right-radius: 0px;
     }
 
+
     .info-content {
+        margin: 0px;
+        display: flex;
         align-items: center;
         justify-content: center;
 
@@ -182,20 +193,29 @@ button {
 
     .info-content h4 {
         text-align: center;
-        font-size: 12px;
+        font-size: 0.9rem;
     }
 
     .info-content h2 {
         text-align: center;
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .info {
-        height: auto;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #search{
+        width: 100%;
     }
 
     input {
-        width: 220px;
+        width: 65%;
     }
 
     #firm {
